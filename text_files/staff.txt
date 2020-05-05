@@ -1,0 +1,9 @@
+Username = Osinachi
+Password = some_password
+Email = email@example.com
+Full Name = Chukwujama Osinachi
+
+Username = Raphael
+Password = rasp@password
+Email = ralph@example.com
+Full Name = Seran Raphael

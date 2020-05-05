@@ -1,0 +1,2 @@
+def runStaffActions(callback):
+    callback()
