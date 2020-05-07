@@ -32,8 +32,8 @@ def generateAccountNumber():
 
 
 def sendToCustomersFile(data):
-    with open('text_files/customer.txt', 'w') as acFile:
-        acFile.write(f'{data}')
+    with open('text_files/customer.txt', 'a') as acFile:
+        acFile.write(f'{data}\n\n')
 
 
 def createBankAccount():
@@ -48,4 +48,4 @@ def createBankAccount():
 
     sendToCustomersFile(account_details)
 
-    return f'\n\nAccount number = {account_number}'
+    print(f'\n\nAccount number = {account_number}')
