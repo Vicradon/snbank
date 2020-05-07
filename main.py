@@ -1,6 +1,3 @@
-import sys
-sys.path.insert(0, './scripts/')
-
 import scripts.utils  as utils
 import scripts.run_staff_actions as staffActions
 
