@@ -14,7 +14,7 @@ def staffSession():
         validpassword = utils.getPassword(username)
         utils.repeat("Input your password: ",
                                 recorrect_message="Password incorrect. Input the right password: ", options=[validpassword])
-        open("text_files/staff_session.txt", "w+")
+        open("text_files/user_session.txt", "w+")
         runStaffActions(entryPoint)
 
 
@@ -26,7 +26,7 @@ def entryPoint():
     if staffSessionOption == '2':
         print("Thank you for your time. Goodbye!")
         if os.path.exists('text_files/staff_session.txt'):
-            os.remove('text_files/staff_session.txt')
+            os.remove('text_files/user_session.txt')
     else:
         staffSession()
 
