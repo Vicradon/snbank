@@ -6,7 +6,7 @@ def repeat(initial_message, recorrect_message="", options=[]):
         while mode not in options:
             mode = input(recorrect_message)
             if mode == 'exit':
-                print("Alright, since you want to exit. Bye!")
+                print("\nAlright, since you want to exit. Bye!")
                 break
     return mode
 

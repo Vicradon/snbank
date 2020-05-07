@@ -12,7 +12,7 @@ def logout():
 
 def actions():
     staff_choice = utils.repeat(
-        "Enter your desired action. Just enter a digit.\n1. create bank account\n2. check account details\n3. logout\nEnter digit here: ", recorrect_message="You must enter a digit. (1, 2 or 3): ", options=['1', '2', '3'])
+        "\nEnter your desired action. Just enter a digit.\n1. create bank account\n2. check account details\n3. logout\nEnter digit here: ", recorrect_message="You must enter a digit. (1, 2 or 3): ", options=['1', '2', '3'])
     return staff_choice
 
 
@@ -25,7 +25,7 @@ def runStaffActions(callback):
             createBankAccount()
             staff_choice = actions()
         if staff_choice == '2' and utils.isEmpty('text_files/customer.txt'):
-            print("You haven't created an account for a customer")
+            print("You haven't created an account for any customer")
             createBankAccount()
             staff_choice = actions()
         if staff_choice == '2' and not(utils.isEmpty('text_files/customer.txt')):
@@ -36,4 +36,4 @@ def runStaffActions(callback):
         else:
             logout()
             breakLoop = True
-            callback(4)
+            callback()
