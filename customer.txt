@@ -4,4 +4,8 @@
         'account type' = savings
         'account email' = ff
         'account number' = 4000000003
-    
+    'account name' = sff
+'opening balance' = 34
+'account type' = savings
+'account email' = dd
+'account number' = 4000000004

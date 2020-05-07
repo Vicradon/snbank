@@ -1,0 +1,5 @@
+'account name' = fewr
+'opening balance' = 342
+'account type' = savings
+'account email' = rr
+'account number' = 4000000012
