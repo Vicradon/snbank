@@ -25,7 +25,7 @@ def entryPoint():
 
     if staffSessionOption == '2':
         print("Thank you for your time. Goodbye!")
-        if os.path.exists('text_files/staff_session.txt'):
+        if os.path.exists('text_files/user_session.txt'):
             os.remove('text_files/user_session.txt')
     else:
         staffSession()
